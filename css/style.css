@@ -1,0 +1,198 @@
+/* 路由跳转 */
+.slide-enter {
+    transform: translateX(100%);
+} 
+.slide-leave-to {
+    transform: translateX(-100%);
+}
+.slide-enter-active, .slide-leave-active {
+    transition: all 0.5s ease;
+}
+/* 页头 */
+header{
+    margin-bottom: 1em;
+}
+#app .mint-header {
+    background-color: #42bd56;
+}
+.header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f3f3f3;
+}
+.header a {
+    display: inline-block;
+    text-indent: -150%;
+}
+.logo {
+    width: 4em;
+    background: url('../images/logo.png') no-repeat center;
+    background-size: contain;
+}
+.search-icon {
+    width: 2em;
+    background:  url('../images/search.png') no-repeat center;
+    background-size: contain;
+}
+.content-box {
+    margin-top: 3em;
+}
+/* 页脚 */
+footer {
+    text-align: center;
+    margin-top: 0.5em;
+    border-top: 2px solid #f3f3f3;
+}
+footer a {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    margin-top: 1em;
+    text-indent: -150%;
+    background: url('../images/GitHub.png') no-repeat center;
+    background-size: cover;
+}
+/* 评分 */
+.star-yellow, .star-white {
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    margin: 0.1em;
+}
+.star-yellow {
+    background: url("../images/star-yellow.png") no-repeat center;
+    background-size: cover;
+}
+.star-white {
+    background: url("../images/star-white.png") no-repeat center;
+    background-size: cover;
+}
+/* 加载 */
+.mint-spinner-triple-bounce {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em; 
+}
+.home-loading {
+    position: fixed;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.list-title{
+    display: flex;
+    align-items: center;
+}
+.list-title p,
+.list-title a {
+    display: block;
+    width: 50%;
+}
+.list-title p {
+    padding-left: 1em;
+    letter-spacing: 0.1em;
+    color: #111;
+}
+.list-title a {
+    text-align: right;
+    text-decoration: none;
+    padding-right: 1em;
+    color: #42bd56;
+    font-size: 0.8em;
+}
+.swipe-box {
+    width: 100%;
+    height: 55vw;
+    margin-bottom: 1em;
+}
+.banner {
+    display: flex;
+}
+.banner-left, .banner-right {
+    width: 50%;
+    height: 100%;
+    font-size: 0.9em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.banner-right p {
+    width: 100%;
+    margin: 0.5em;
+}
+.banner-left img {
+    width: 36vw;
+    height: 48vw;
+}
+.banner-right p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+}
+.banner-right p:nth-child(2) span {
+    color: #F05522;
+}
+.content-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-list>div {
+    width: 50%;
+    text-align: center;
+}
+.content-list>div>img {
+    width: 30vw;
+    height: 45vw;
+}
+.content-list>div p {
+    text-align: center;
+    font-size: 0.8em;
+    color: #37a;
+}
+/* 搜索页 */
+.search .search-input .mint-search {
+    height: 100%;
+}
+.tag-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+.tag {
+    width: 33.333%;
+    text-align: center;
+}
+.tag:nth-of-type(16), .tag:nth-of-type(17) {
+    width: 50%;
+}
+.tag a {
+    display: block;
+    margin: 2vh;
+    width: 80%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+}
+/* 电影详情页 */
+.movie-summary p {
+    padding: 0 1em;
+    text-indent: 2em;
+    line-height: 2;
+    font-size: 0.8em;
+}
+.movie-summary h4,
+.movie-directors h4, 
+.movie-casts h4, 
+.works-list h4 {
+    text-indent: 1em;
+    color: #111;
+    letter-spacing: 0.1em;
+}
